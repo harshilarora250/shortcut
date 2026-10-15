@@ -1,0 +1,11 @@
+body {
+    min-height: 66.6667vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #ffffff;
+background-image:
+  linear-gradient(to right, #e5e7eb 1px, transparent 1px),
+  linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+background-size: 40px 40px;
+}
