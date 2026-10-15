@@ -1,3 +1,20 @@
+::selection {
+    background: red;
+    color: aqua;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+
+.rsvp-container {
+    text-align: center;
+}
+
 .title {
 
     font-family: "Rubik Broken Fax", system-ui;
@@ -12,4 +29,22 @@
     color: white;
     font-size: 50px;
     text-align: center;
+    align-items: center;
+    left: 50%;
+}
+
+.subtitle{
+    color: grey;
+    text-align: center;
+    font-size: 10px;
+}
+
+hr {
+    top: 50px;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 10px;
 }
