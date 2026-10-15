@@ -3,6 +3,21 @@
     color: aqua;
 }
 
+html {
+  /* Scale the entire page up by 150% */
+  transform: scale(1.5);
+  transform-origin: top left;
+  
+  /* Critical: Shrink the viewport box to 66.66% (100 / 1.5) 
+     so the scaled-up content fills exactly 100% of the screen */
+  width: 66.66vw;
+  height: 66.66vh;
+  
+  /* Prevents unwanted clipping issues */
+  overflow-x: hidden; 
+}
+
+
 body {
   min-height: 100vh;
   display: flex;
@@ -50,4 +65,5 @@ footer {
     font-family: "Moon Dance", cursive;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.2;
 }
