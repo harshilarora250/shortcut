@@ -14,10 +14,37 @@ background-size: 40px 40px;
   width: 200px;
 }
 
+/*Below, is the animation, and formatiing for the title / # */
+
 .md-h1 {
+  position: relative;
   font-family: "Rubik Broken Fax", system-ui;
   font-weight: 400;
   font-style: normal;
   font-size: 200px;
   text-align: center;
+}
+
+.md-h1::before {
+  content: "#";
+  position: absolute;
+
+  /* Position on the left side */
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* Appearance */
+  color: lightgrey;
+  font-family: monospace;
+  font-size: 100px;
+  font-weight: normal;
+
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.md-h1:hover::before {
+  opacity: 1;
 }
