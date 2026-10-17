@@ -9,3 +9,11 @@ background-image:
   linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
 background-size: 40px 40px;
 }
+
+.md-h1 {
+  font-family: "Rubik Broken Fax", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200px;
+  text-align: center;
+}
